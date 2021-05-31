@@ -1,0 +1,47 @@
+.heading {
+  font-family: cursive;
+  text-align: center;
+  font-size: 10vmin;
+  color: darkorange;
+  margin: 2rem;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 1vx;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 2%;
+  font-weight: 600;
+  transition: all 0.09s;
+  text-align: center;
+  background-color: rgba(240, 212, 101, 0.4);
+  border-radius: 2px;
+  text-shadow: 0 0 4px black;
+  font-size: 2rem;
+}
+.playing {
+  transform: scale(1.2);
+  border: 4px solid green;
+  box-shadow: 0 0 10px black;
+  background-color: rgba(240, 212, 101, 0.2);
+}
+.kbd {
+  color: black;
+  font-size: 20em;
+}
+.sound {
+  color: blue;
+}
+
+.imgage {
+  image-rendering: no-repeat;
+}

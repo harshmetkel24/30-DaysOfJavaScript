@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#Day_2</title>
+    <link rel="stylesheet" href="day_2.css" />
+  </head>
+  <body>
+    <div class="clock" id="clock">
+      <div class="clock-face" id="clock-face">
+        <div class="hand hour-hand" id="hour-hand"></div>
+        <div class="hand min-hand" id="min-hand"></div>
+        <div class="hand second-hand" id="second-hand"></div>
+        <div class="pivot" id="pivot"></div>
+        <div class="layout" id="layout">
+          <div class="letter h12">12</div>
+          <div class="letter h3">3</div>
+          <div class="letter h6">6</div>
+          <div class="letter h9">9</div>
+        </div>
+      </div>
+    </div>
+
+    <fieldset>
+      <legend>Hand-Details</legend>
+      <span class="details" id="details">
+        <ul>
+          <li>
+            <span class="colorInfo sec">Second-hand</span>
+            <span class="color sec" style="border: 0; background: none"></span>
+          </li>
+          <li>
+            <span class="colorInfo min">Minute-hand</span>
+            <span class="color min" style="border: 0; background: none"></span>
+          </li>
+          <li>
+            <span class="colorInfo hour">Hour-hand</span>
+            <span class="color hour" style="border: 0; background: none"></span>
+          </li>
+        </ul>
+      </span>
+    </fieldset>
+  </body>
+  <script src="day_2.js"></script>
+</html>

@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="day_1.css" />
+    <title>Day_1</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading" id="heading">Drum Kit</h1>
+    </header>
+
+    <section>
+      <div class="keys" id="keys">
+        <div class="key" data-key="65">
+          <kbd>A</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div class="key" data-key="83">
+          <kbd>S</kbd>
+          <span class="sound">hithat</span>
+        </div>
+        <div class="key" data-key="68">
+          <kbd>D</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div class="key" data-key="70">
+          <kbd>F</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div class="key" data-key="71">
+          <kbd>G</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div class="key" data-key="72">
+          <kbd>H</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div class="key" data-key="74">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div class="key" data-key="75">
+          <kbd>K</kbd>
+          <span class="sound">ton</span>
+        </div>
+        <div class="key" data-key="76">
+          <kbd>L</kbd>
+          <span class="sound">tink</span>
+        </div>
+      </div>
+      <img src="img1.jpg" class="image" alt="" width="100%" height="100%" />
+    </section>
+
+    <audio src="sounds/clap.mp3" data-key="65"></audio>
+    <audio src="sounds/hithat.mp3" data-key="83"></audio>
+    <audio src="sounds/kick.mp3" data-key="68"></audio>
+    <audio src="sounds/openhat.mp3" data-key="70"></audio>
+    <audio src="sounds/boom.mp3" data-key="71"></audio>
+    <audio src="sounds/ride.mp3" data-key="72"></audio>
+    <audio src="sounds/snare.mp3" data-key="74"></audio>
+    <audio src="sounds/ton.mp3" data-key="75"></audio>
+    <audio src="sounds/tink.mp3" data-key="76"></audio>
+  </body>
+  <script src="day_1.js"></script>
+</html>

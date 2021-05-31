@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        const people = [
+            { name: 'Wes', year: 1988 },
+            { name: 'Kait', year: 1986 },
+            { name: 'Irv', year: 1970 },
+            { name: 'Lux', year: 2015 },
+        ];
+
+        const comments = [
+            { text: 'Love this', id: 123456 },
+            { text: 'Super good', id: 823423 },
+            { text: 'You are the best', id: 2039842 },
+            { text: 'Ramen in my fav food ever', id: 123523 },
+            { text: 'Nice Nice Nice!', id: 542328 },
+        ];
+
+        // some and every checks
+
+        // Array prototype.some() => is at least one person 19?
+        // const isAdult = people.some((people) => {
+        //     return new Date().getFullYear() - people.year >= 19 ? true : false;
+        //     // if (currentYear - people.year >= 19)
+        //     // return true;
+        //     // else return false;
+        // });
+        // Array.prototype.every() => is everyone 19?
+        const isAdult = people.every((people) => {
+            return new Date().getFullYear() - people.year >= 19 ? true : false;
+            // if (currentYear - people.year >= 19)
+            // return true;
+            // else return false;
+        });
+        console.log({ isAdult });
+
+        // Array.prototype.find()
+        // find is like filter, but instead of returns just the one you are looking for
+        // find teh comment with the ID of 823423
+        const comment = comments.find((comment) =>
+            comment.id == 823423 ? 1 : 0
+        );
+        console.log(comment);
+
+        // Array.prototype.findIndex()
+        // Find the comment with this ID
+        // delete the comment with the ID 823423
+        const index = comments.findIndex((comment) => comment.id == 823423);
+        console.log(index);
+        comments.splice(index, 1); // first param gives the starting index and then second param given no of items to delete. here consider 0 based indexing
+        console.log(comments);
+        const newComments = [
+            ...comments.slice(0, index), // delte everyting from  startign to index
+            ...comments.slice(index + 1), // delete everything after index
+        ];
+        console.log(comments, newComments);
+    </script>
+</html>

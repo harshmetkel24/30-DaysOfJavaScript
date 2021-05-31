@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+  /* Applying box-sizing: border-box; is always a good and wise choice */
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* this will be equal to border-box */
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.panel {
+  background: purple;
+  display: flex;
+  box-shadow: inset 0 0 0 5px black;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  font-size: 40px;
+  background-size: cover;
+  text-transform: uppercase;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background-size 0.2s;
+  background-position: center;
+  /* this will position them space around in a column */
+  justify-content: space-around;
+}
+
+/* This are flex childrens */
+.panel > * {
+  margin: 0;
+  width: 100%;
+  /* this will align in a row */
+  align-items: center;
+  flex: 1;
+  display: flex;
+  /* this will align in column */
+  justify-content: center;
+  /* here 0.5s is the transition time it will take */
+  transition: transform 0.5s;
+}
+
+.panel > *:first-child {
+  /* remove the firstchild */
+  transform: translateY(-100%);
+}
+.panel.open-active > *:first-child {
+  /* this will add the fistchild again */
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel.open {
+  /* we are adding this class to add flex and font grow effect in a program */
+  font-size: 80px;
+  flex: 5;
+}
+
+.panel1 {
+  background-color: teal;
+}
+
+.panel2 {
+  background-color: tomato;
+}
+
+.panel3 {
+  background-color: darkorange;
+}
+
+.panel4 {
+  background-color: brown;
+}
+
+.panel5 {
+  background-color: darkgoldenrod;
+}

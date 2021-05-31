@@ -1,0 +1,43 @@
+:root {
+  --base: yellow;
+  --spacing: 10px;
+  --blur: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2,
+h1 {
+  font-size: 10vmin;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2vh;
+  color: white;
+}
+.h1 {
+  color: var(--base);
+}
+
+body {
+  background-image: linear-gradient(to bottom, blue, black, rgb(112, 11, 116));
+  background-repeat: no-repeat;
+}
+
+section {
+  color: white;
+  font-size: 4vmin;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-right: 2vw;
+}
